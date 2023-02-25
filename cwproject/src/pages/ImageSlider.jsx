@@ -1,7 +1,6 @@
 import { useState } from "react";
 import {AiOutlineDoubleLeft, AiOutlineDoubleRight} from "react-icons/ai"
 export default function ImageSlider({ linkArr,h }) {
-  console.log(linkArr)
   let [currentIndex, setCurrentIndex] = useState(0);
   let slideStyles = {
     width: "100%",

@@ -15,6 +15,5 @@ export default function AllLink(){
         <NavLink to = "/rewards" style={linkStles}>REWARDS</NavLink>
         <NavLink to = "/selflove" style={linkStles}>SELFLOVE STUDIO</NavLink>
         <NavLink to = "/offres" style={linkStles}>OFFERS</NavLink>
-
     </Grid>
 }

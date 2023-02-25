@@ -8,6 +8,9 @@ import Collection from "../pages/Collection";
 import Rewards from "../pages/Rewards";
 import Selflove from "../pages/Selflove";
 import Offres from "../pages/Offres";
+import Login from "../pages/Login";
+import SignUp from "../pages/SignUp";
+import AllDetails from "../pages/AllDetails";
 
 export default function AllRoutes(){
     return <Routes>
@@ -20,5 +23,8 @@ export default function AllRoutes(){
         <Route path =  "/rewards" element = {<Rewards />} />
         <Route path =  "/selflove" element = {<Selflove />} />
         <Route path =  "/offres" element = {<Offres />} />
+        <Route path =  "/login" element = {<Login />} />
+        <Route path =  "/signup" element = {<SignUp />} />
+        <Route path = "/alldetails/:id" element = {<AllDetails />} />
     </Routes>
 }
