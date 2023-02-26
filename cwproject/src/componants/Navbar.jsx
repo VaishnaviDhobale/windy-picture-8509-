@@ -76,7 +76,7 @@ export default function Navbar() {
             </h3>
           </Box>
           <Box position="relative" top="17px">
-            <NavLink to="/login" style={linkStles}>
+            <NavLink to="/login" style={  linkStles}>
               Login
             </NavLink>
             <Button

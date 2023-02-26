@@ -8,6 +8,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import SingleCard from "./SingleCard";
 import Videos from "./Videos";
+import Footer from "./Footer";
 
 
 export default function Home() {
@@ -300,6 +301,7 @@ export default function Home() {
 
 
       {/* footer */}
+      <Footer />
     </div>
   );
 }

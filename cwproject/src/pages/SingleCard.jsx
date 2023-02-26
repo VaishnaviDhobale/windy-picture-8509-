@@ -9,8 +9,9 @@ export default function SingleCard({
   name,
   price,
   price_sign,
-  handleShow,
-}) {
+}) 
+{
+  let style={}
   return (
     <Link to={`/alldetails/${id}`} style={{textDecoration: "none", color:"black"}}>
       <Box
@@ -22,7 +23,9 @@ export default function SingleCard({
         boxShadow="rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
         pb="20px"
         cursor="pointer"
-        onClick={() => handleShow(id)}
+        style={style}
+        onMouseEnter={style["border"]="2px solid black"}
+        onMouseLeave={style["border"] = "none"}
       >
         <Img src={api_featured_image} w="100%" h="300px" pb="10px"></Img>
         <h2>{name}</h2>
@@ -30,7 +33,7 @@ export default function SingleCard({
         {description ? (
           <Text mt="10px" mb="10px">{`${description.substring(
             0,
-            40
+            30
           )}...`}</Text>
         ) : null}
         <h2>

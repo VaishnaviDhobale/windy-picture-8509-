@@ -11,7 +11,7 @@ import Offres from "../pages/Offres";
 import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
 import AllDetails from "../pages/AllDetails";
-
+import Cart from "../pages/Cart";
 export default function AllRoutes(){
     return <Routes>
         <Route path = "/" element = {<Home />}></Route>
@@ -26,5 +26,7 @@ export default function AllRoutes(){
         <Route path =  "/login" element = {<Login />} />
         <Route path =  "/signup" element = {<SignUp />} />
         <Route path = "/alldetails/:id" element = {<AllDetails />} />
+        <Route path = "/cart/:id1" element = {<Cart />} />
+
     </Routes>
 }
